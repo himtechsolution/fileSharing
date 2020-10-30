@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    overflow: hidden;
+  }
+  
+  #myVideo {
+   
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    overflow: hidden;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 50px;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .logo{
+    position: fixed;
+    width: 220px;
+    padding: 20px;
+    /* background-color: white; */
+
+  }
+  
+  
+  #myBtn {
+      
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background:transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background:  #99e8fc;
+    color: black;
+  }
+.upload{
+    width: 100px;
+}

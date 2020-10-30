@@ -1,0 +1,97 @@
+:root{
+  --main-background-color: #edf5fe;
+    --light-blue: #03a9f4;
+    --border-color: #0288d147;
+    --dragged-drop-zone: #99e8fc;
+   
+}
+
+body {
+  font-family: 'Syne Mono', monospace;
+  background:var(--main-background-color);
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+.logo{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 160px;
+  
+}
+
+body , .drop-zone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo{
+  background-position: center;
+}
+
+.drop-zone{
+  width: 500px;
+  min-height: 200px;
+  border: 2px dashed var(--border-color);
+  border-radius: 10px;
+  margin: 30px;
+  transition: all .2s ease;
+}
+.d
+
+.dragged.drop-zone{
+  background: var(--dragged-drop-zone);
+  border-color:var(--dragged-drop-zone) ;
+}
+
+.uploda-container{
+ background: #ffffff;
+ border-radius: 25px;
+ box-shadow: 0px 20px 20px #0000002e;
+}
+
+.uploda-container .drop-zone{
+  flex-direction: column;
+}
+
+.file-icon{
+  width: 85px;
+  height: 100px;
+  position: relative;
+}
+
+.file-icon >img{
+ width: 85px;
+ position: absolute;
+ transform-origin: bottom;
+ transition: transfrom 250ms ease-in-out ;
+
+}
+
+.file-icon .center{
+  z-index: 2;
+}
+
+.dragged .file-icon .rightt{
+  transform: rotate(11deg) translateX(45px) scale(.9);
+  
+}
+.dragged .file-icon .left{
+  transform: rotate(-11deg) translateX(-45px) scale(.9) ;
+}
+.dragged .file-icon .center{
+  transform: translateY(-10px);
+}
+
+#fileInput{
+  display: none;
+
+}
+
+.browseButton{
+  color: #2196f3;
+  cursor: pointer;
+}
